@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage[a4paper, left=3cm, right=2cm, top=3cm, bottom=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{fontspec}
+
+\setmainfont{Times New Roman}
+
+\title{Escalonamento}
+\author{Universidade Federal de Santa Catarina\\João Thomas}
+
+\begin{document}
+\maketitle
+
+\section{Introdução}
+Em um sistema com um único processador, apenas um processo pode ser executado de cada vez. Os outros devem esperar até que a CPU esteja livre e possa ser realocada. O objetivo da multiprogramação é manter sempre algum processo em execução para maximizar a utilização da CPU. A ideia é relativamente simples: um processo é executado até ter que esperar, geralmente pela conclusão de alguma solicitação de I/O. Em um sistema de computação simples, a CPU permanece ociosa. Todo esse tempo de espera é desperdiçado; nenhum trabalho útil é realizado. Com a multiprogramação, tentamos usar esse tempo produtivamente. Vários processos são mantidos na memória ao mesmo tempo. Quando um processo precisa esperar, o sistema operacional desvincula a CPU desse processo e a designa a outro processo. Esse padrão continua. Sempre que um processo tem que esperar, outro processo pode assumir o uso da CPU. Um escalonamento desse tipo é uma função básica do sistema operacional. Quase todos os recursos do computador são alocados antes de serem usados. É claro que a CPU é um dos principais recursos do computador. Portanto, o seu escalonamento é essencial no projeto do sistema operacional. A ideia é escalonar e priorizar processos de acordo com uma prioridade pré-estabelecida. O processo introdutório será descrito em uma CPU, mas o processo tem diversas aplicações, como em sistemas embarcados. Esses algoritmos são usados para estimar o tempo de CPU necessário para alocar os processos e threads. O objetivo principal de qualquer algoritmo de escalonamento de CPU é manter a CPU o mais ocupada possível para melhorar sua utilização.
+
+\subsection{Quando Escalonar}
+A necessidade de escalonamento surge em diversas situações: primeiro, quando se cria um processo, é necessário decidir qual processo há de ser executado, o processo pai ou o processo filho, como ambos estão no estado pronto. Em segundo lugar, a necessidade de escalonamento surge quando um processo está completo. Em terceiro lugar, quando um processo passa do estado de espera para o estado pronto. Em quarto lugar, quando um processo passa do estado de execução para o estado pronto.
+
+\subsection{Categorias dos Algoritmos de Escalonamento}
+Os algoritmos de escalonamento são categorizados de acordo com os ambientes em que estão inseridos, devido às diferentes necessidades de aplicação otimizadas pelo escalonador. Entre todas as situações em que surge a necessidade de escalonamento, três merecem distinção:
+
+\begin{enumerate}
+    \item Lote
+    \item Interativo
+    \item Tempo Real
+\end{enumerate}
+\subsection{objetivos dos algoritmos de escalonamento}
+A perspectiva inicial do que um bom algoritmo deve ter é algo essencial, na sua elaboração, alguns objetivos dependem do tipo de ambiente ao qual são destinados, mas também aqueles, que são desejáveis para todos os casos, outro objetivo é manter quando possível todas as partes do sistema ocupadas.
+\section{Escalonamento em sistemas em lote}
+\subsection{Primeiro a chegar, 	primeiro a ser servido (FCFS  First Come, First Served)
+}
+Entre os algoritmos de escalonamento o FCFS é um dos mais simples. Como o nome já implica, neste algoritmo os processos são executados na ordem de chegada, sem preempção, ou seja, a CPU é atribuída ao primeiro processo na fila de prontos e os demais aguardam até que acabe sua execução ou até que fique bloqueado por uma operação de E/S. Embora sua implementação seja simples, o FCFS pode ser injusto em situações, em que um processo intensivo em CPU bloqueia outros que realizam pouca CPU, resultando em longos tempos de espera.
+\subsection{Tarefa mais curta primeiro}
+Nesse algoritmo o processador é alocado ao processo com a menor duração estimada, resultando assim, em tempos de retornos mais curtos. Para determinar o tempo de retorno médio para uma situação em que estejam abertas 4 tarefas simultaneamente, pode se utilizar a seguinte expressão:
+\[(4a+3b+2c+d)/d\]
+
+\end{document}

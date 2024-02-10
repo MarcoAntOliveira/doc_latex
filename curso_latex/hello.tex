@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[portuguese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage{lipsum}
+
+ 
+\author{Marcos antonio}
+\title{Transformada de Laplace - Sinais e sistemas}
+\date{\today}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+    O presente trabalho visa apresentar um breve resumo sobre a transformada de laplace para sistemas causais. 
+\end{abstract}
+\tableofcontents
+
+\section{Introdução}
+Para um sinal x(t), a transformada de Laplace L{x(t)} = X(s) é definida por:
+\[\textcolor{blue}{X(S) = \int_{-\infty}^{\infty} x(t)e^{-st}   \, dt}\quad onde\quad s=\sigma +j\omega 
+\quad \textcolor{blue}{X(s)= \int_{-\infty}^{\infty}x(t)e^{-(\sigma +j\omega)}dt = \int_{0}^{\infty}x(t)e^{-\sigma t}dt}\] Esta equação é conhecida como transformada de Laplace bilateral.
+\section{Transformada de Laplace para Sistemas causais}
+\[\textcolor{blue}{rL\{x(t)u(t)\} = X(S)= \int_{-\infty}^{\infty} x(t)u(t)e^{-st} \, dt = \int_{0^{+}}^{\infty} x(t)e^{-st}  \, dt}\]A existência de X(s) está condicionada à convergência da integral da definição, ou seja, que integral seja absolutamente integrável.
+\[\textcolor{blue}{ \int_{-\infty}^{\infty} |f(t)| dt < \infty }\]
+\section{Convergência}
+Portanto, a transformada de Laplace converge se:
+\[\textcolor{blue}{or\int_{-\infty}^{\infty} |x(t)e^{-\sigma t}dt| <{\infty} \quad converge\quad se\quad \sigma > 0 }\]
+Desta forma, X(s) existe somente para valores de Re{s} localizados numa região do plano complexo denominada Região de Convergência (ROC – region of convergence)
+\section{Região de Convergência (ROC – region of convergence)}
+A ROC é necessária para a determinação da transformada inversa de Laplace x(t) de X(s), definida pela equação ao lado:
+\[\textcolor{blue}{x(t) =\frac{1}{2\pi j} \int_{c-j\infty}^{c +j\infty} X(S)e^{st}ds}\]
+onde c é uma constante escolhida para garantir a convergência da integral. Porém, nós iremos utilizar tabelas para calcular x(t) ao invés de fazer uso da integral acima.
+\footnote{Este texto feito para realizar o estudo de tal assunto}\\\\\\\\
+
+
+
+\begin{minipage}{0.4\textwidth}
+    \centering
+    \hrule
+    Assinatura do Autor
+\end{minipage}
+\end{document}

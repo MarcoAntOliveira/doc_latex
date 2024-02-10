@@ -1,0 +1,75 @@
+\documentclass[16pts]{article}
+\usepackage[a4paper, left=1 cm, right=1cm, top=0.5cm, bottom=1cm] {geometry}
+\date{} % Remove a exibição da data
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{enumitem} 
+
+\lstset{
+  language=python,
+  basicstyle=\ttfamily,
+  keywordstyle=\bfseries\color{blue},
+  commentstyle=\color{red},
+  stringstyle=\color{blue!70!black},
+  numberstyle=\tiny,
+  stepnumber=1,
+  numbersep=5pt,
+  backgroundcolor=\color{white},
+  breaklines=true,
+  breakautoindent=true,
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  tabsize=2
+}
+\title{}
+\begin{document}
+\maketitle
+\section{consigo realizar processamento de dados em um web server, usando django}
+Sim, você pode realizar processamento de dados em um servidor web usando o framework Django. Django é um framework de desenvolvimento web Python que facilita a criação de aplicativos web robustos e escaláveis. Ele oferece suporte para o processamenmto de dados de várias maneiras. Aqui estão algumas maneiras de realizar o processamento de dados em um servidor web Django:
+\itemize{begin}
+\begin{itemize}
+  \item Views: As views em Django sao responsaveis por processar as solicitacoes HTTP dos clientes e retornar as respostas apropriadas. Você pode escrever codigo Python personalizado nas views para processar dados, consultar bancos de dados, executar calculos e muito mais.
+  \begin{lstlisting}
+    from django.http import HttpResponse
+  def minha_view(request):
+      # Seu codigo de processamento de dados aqui
+      dados_processados = processar_dados()
+      return HttpResponse("Resultados: {}".format(dados_processados))
+  \end{lstlisting}    
+  \item Modelos: Django inclui um sistema de ORM (Object-Relational Mapping) que permite definir modelos de dados e mapeá-los para tabelas em um banco de dados. Você pode usar modelos para criar, ler, atualizar e excluir dados no banco de dados.
+  \begin{lstlisting}
+  from django.db import models
+  class MeuModelo(models.Model):
+      campo1 = models.CharField(max_length=100)
+      campo2 = models.IntegerField()
+
+  # Para criar um novo registro no banco de dados
+  novo_registro = MeuModelo(campo1="Valor1", campo2=42)
+  novo_registro.save()
+
+  # Para consultar dados
+  resultados = MeuModelo.objects.filter(campo1="Valor1")
+  \end{lstlsiting}
+\end{itemize} 
+\section{tenho que pagar alguma coisa para processar esses dados no web server}
+O processamento de dados em um servidor web Django não requer que você pague diretamente por isso, a menos que você esteja usando serviços ou recursos específicos que têm custos associados. No entanto, existem alguns pontos a serem considerados:
+
+Custos de Hospedagem: Se você estiver implantando seu aplicativo Django em um servidor web, como Amazon Web Services (AWS), Google Cloud Platform (GCP), Microsoft Azure ou em um serviço de hospedagem compartilhada, pode haver custos associados à infraestrutura e aos recursos de hospedagem, como servidores, largura de banda, armazenamento e recursos computacionais. Os custos variam dependendo do provedor de hospedagem e do plano escolhido.
+
+Banco de Dados: Se você estiver usando um banco de dados em seu aplicativo Django, como o PostgreSQL ou o MySQL, pode haver custos associados à hospedagem e ao uso do banco de dados. Novamente, os custos dependem do provedor e da escala do seu aplicativo.
+
+Domínio: Se você estiver usando um nome de domínio personalizado para seu aplicativo, haverá custos associados ao registro e à renovação do domínio. Os custos de domínio variam dependendo do registrador de domínio escolhido.
+
+Certificado SSL: Se você estiver servindo seu aplicativo por HTTPS, poderá precisar de um certificado SSL, que geralmente tem custos associados. No entanto, muitos provedores de hospedagem oferecem certificados SSL gratuitos por meio de serviços como Let's Encrypt.
+
+Terceiros e Serviços Externos: Se seu aplicativo depende de serviços externos ou APIs de terceiros para processamento de dados, esses serviços podem ter seus próprios custos associados. Verifique os termos de uso e as políticas de preços desses serviços.
+
+Desenvolvimento e Manutenção: Embora o Django em si seja um framework de código aberto gratuito, o desenvolvimento, a manutenção e o suporte contínuo para seu aplicativo podem ter custos associados, como o pagamento de desenvolvedores ou equipes de desenvolvimento.
+
+Lembre-se de que os custos podem variar amplamente com base nas escolhas de tecnologia, no tamanho e na escala do seu aplicativo. Certifique-se de entender todos os custos potenciais associados ao seu projeto antes de começar a desenvolvê-lo e escolher as opções que melhor se adequam ao seu orçamento e requisitos.
+
+\end{document}

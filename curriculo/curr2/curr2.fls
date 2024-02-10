@@ -1,0 +1,4 @@
+PWD c:\Users\marco\projetos\latex\curriculo\curr2
+INPUT C:\Users\marco\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Users\marco\projetos\latex\curriculo\curr2\curr2.tex
+OUTPUT curr2.log

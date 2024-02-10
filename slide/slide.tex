@@ -1,0 +1,65 @@
+\documentclass{beamer}
+
+% Tema da apresentação (opcional)
+% Existem diversos temas disponíveis, você pode escolher o que melhor se adequa à sua apresentação
+%\usetheme{default}
+\usetheme{Warsaw}
+
+% Defina cores personalizadas
+\definecolor{cor_fundo}{RGB}{230,230,230}
+\definecolor{cor_titulo}{RGB}{0,0,0}
+\definecolor{cor_blocos}{RGB}{100,150,50}
+
+% Personalize as cores do tema
+\setbeamercolor{background canvas}{bg=cor_fundo} % Fundo dos slides
+\setbeamercolor{title}{fg=cor_titulo} % Cor do título
+\setbeamercolor{block title}{bg=cor_blocos, fg=blue} % Título dos blocos
+\setbeamercolor{block body}{bg=cor_fundo, fg=black} % Corpo dos blocos
+\setbeamercolor{item}{fg=cor_blocos} % Cor dos itens
+
+
+% Título, autor e data da apresentação
+\title{Escalonamento - Sistemas Operacionais}
+\author{Seu Nome}
+\date{\today}
+
+\begin{document}
+
+% Slide de título
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% Slide de conteúdo
+\begin{frame}
+    \frametitle{Introdução}
+    Este é um slide de conteúdo.
+    \begin{itemize}
+        \item Item 1
+        \item Item 2
+        \item Item 3
+    \end{itemize}
+\end{frame}
+
+% Outro slide de conteúdo
+\begin{frame}
+    \frametitle{Mais conteúdo}
+    \begin{enumerate}
+        \item Primeiro item numerado
+        \item Segundo item numerado
+    \end{enumerate}
+\end{frame}
+
+% Slide de conclusão
+\begin{frame}
+    \frametitle{Conclusão}
+    \begin{block}{Resumo}
+        Esta é a conclusão da apresentação.
+    \end{block}
+    
+    \begin{alertblock}{Importante}
+        Lembre-se de que o LaTeX é uma excelente ferramenta para criar slides bem estruturados e profissionais.
+    \end{alertblock}
+\end{frame}
+
+\end{document}

@@ -1,0 +1,15 @@
+PWD c:\Users\marco\projetos\latex\slide2
+INPUT C:\Users\marco\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Users\marco\projetos\latex\slide2\slide2.tex
+OUTPUT slide2.log
+INPUT C:\Users\marco\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Users\marco\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT .\slide2.aux
+INPUT .\slide2.aux
+INPUT slide2.aux
+OUTPUT slide2.aux
+OUTPUT slide2.pdf
+INPUT C:\Users\marco\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
+INPUT slide2.aux
+INPUT C:\Users\marco\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\marco\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb

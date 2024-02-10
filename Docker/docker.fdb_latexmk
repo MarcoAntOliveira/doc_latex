@@ -1,0 +1,19 @@
+# Fdb version 4
+["pdflatex"] 1693055939 "c:/Users/marco/projetos/latex/Docker/docker.tex" "docker.pdf" "docker" 1693055940 1
+  "C:/Users/marco/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1692884322 24120579 bff069f5f4e7de016e4adc8f43d8a470 ""
+  "C:/Users/marco/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty" 1643997108 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
+  "C:/Users/marco/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifvtex.sty" 1643997108 1057 525c2192b5febbd8c1f662c9468335bb ""
+  "C:/Users/marco/AppData/Local/Programs/MiKTeX/tex/latex/base/article.cls" 1687174146 20144 fbcf51733730d8f1a62143512ff5b1fe ""
+  "C:/Users/marco/AppData/Local/Programs/MiKTeX/tex/latex/base/size10.clo" 1687174146 8448 74078c4a887f2cdcd57c3ec111622740 ""
+  "C:/Users/marco/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.cfg" 1578053545 1104 7ac475a4e3466b0b43e138e9356bda83 ""
+  "C:/Users/marco/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.sty" 1578053545 42759 9cf6c5257b1bc7af01a58859749dd37a ""
+  "C:/Users/marco/AppData/Local/Programs/MiKTeX/tex/latex/graphics/keyval.sty" 1665067579 2671 7e67d78d9b88c845599a85b2d41f2e39 ""
+  "C:/Users/marco/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1681896761 29940 9473d58112bc8a88f5505b823a053dde ""
+  "c:/Users/marco/projetos/latex/Docker/docker.tex" 1693055933 137 98d8c27da252ff56c012729e1595529e ""
+  "docker.aux" 1693055939 8 a94a2480d3289e625eea47cd1b285758 "pdflatex"
+  "docker.tex" 1693055933 137 98d8c27da252ff56c012729e1595529e ""
+  (generated)
+  "docker.aux"
+  "docker.log"
+  "docker.pdf"
+  (rewritten before read)
