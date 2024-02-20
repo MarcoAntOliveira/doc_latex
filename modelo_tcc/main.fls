@@ -1,8 +1,0 @@
-PWD c:\Users\marco\projetos\latex\modelo_tcc
-INPUT C:\Users\marco\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\marco\projetos\latex\modelo_tcc\main.tex
-OUTPUT main.log
-INPUT C:\Users\marco\AppData\Local\Programs\MiKTeX\tex\latex\abntex2\abntex2.cls
-INPUT C:\Users\marco\AppData\Local\Programs\MiKTeX\tex\latex\abntex2\abntex2.cls
-INPUT C:\Users\marco\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
-INPUT C:\Users\marco\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
